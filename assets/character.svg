@@ -1,0 +1,12 @@
+<svg width="200" height="200" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style="image-rendering: pixelated;">
+  <rect width="12" height="12" fill="transparent"/>
+  <!-- Head -->
+  <path d="M4 2 H8 V3 H9 V4 H10 V8 H9 V9 H8 V10 H4 V9 H3 V8 H2 V4 H3 V3 H4 Z" fill="#39ff14"/>
+  <!-- Eyes -->
+  <rect x="4" y="5" width="1" height="1" fill="#0f0f0f"/>
+  <rect x="7" y="5" width="1" height="1" fill="#0f0f0f"/>
+  <!-- Mouth -->
+  <rect x="4" y="7" width="1" height="1" fill="#0f0f0f"/>
+  <rect x="7" y="7" width="1" height="1" fill="#0f0f0f"/>
+  <rect x="5" y="8" width="2" height="1" fill="#0f0f0f"/>
+</svg>

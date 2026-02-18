@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laukik Deshmukh | Retro Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CRT Scanline Overlay -->
+    <div class="scanlines"></div>
+    <div class="haze"></div>
+
+    <main class="container">
+        <!-- SECTION 1: HERO -->
+        <section id="hero" class="section active">
+            <div class="hero-content">
+                <div class="col-left">
+                    <h1 class="glitch-text">HEY<br>YOU</h1>
+                </div>
+                <div class="col-center">
+                    <div class="character-container">
+                        <img src="assets/character.svg" alt="Pixel Character" class="pixel-char floating">
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="intro-text">
+                        <span>I'M</span>
+                        <span class="name highlight">LAUKIK</span>
+                        <span>DESHMUKH</span>
+                    </div>
+                </div>
+            </div>
+            <button id="start-btn" class="retro-btn neon-box">START_GAME</button>
+        </section>
+
+        <!-- SECTION 2: ABOUT -->
+        <section id="about" class="section hidden">
+            <div class="rpg-box">
+                <h2 class="section-title">PLAYER PROFILE</h2>
+                <div class="profile-grid">
+                    <div class="profile-pic">
+                        <img src="assets/character.svg" alt="Profile" class="avatar-small">
+                    </div>
+                    <div class="profile-stats">
+                        <p><span class="label">NAME:</span> Laukik Deshmukh</p>
+                        <p><span class="label">CLASS:</span> B.Tech CSE</p>
+                        <p><span class="label">LEVEL:</span> 3rd Year</p>
+                        <p><span class="label">MINOR:</span> Data Science</p>
+                        <p><span class="label">LOC:</span> Nashik, MH</p>
+                    </div>
+                </div>
+                <div class="bio-text">
+                    <p>Passionate coder and data science enthusiast ready to tackle complex algorithms and build
+                        scalable solutions.</p>
+                </div>
+                <button id="view-stats-btn" class="retro-btn simple-border">VIEW STATS</button>
+            </div>
+        </section>
+
+        <!-- SECTION 3: STATS -->
+        <section id="stats" class="section hidden">
+            <div class="rpg-box wide">
+                <h2 class="section-title">SKILL TREE</h2>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-label">Programming</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Web Dev</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">DSA</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">AI/ML</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-width="75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements">
+                    <h3 class="subsection-title">ACHIEVEMENTS</h3>
+                    <div class="badges-grid">
+                        <div class="badge">70+ LeetCode</div>
+                        <div class="badge">3★ HackerRank</div>
+                        <div class="badge">Oracle AI Cert</div>
+                        <div class="badge">JPMorgan Sim</div>
+                        <!-- Filler badges for retro look -->
+                        <div class="badge locked">???</div>
+                        <div class="badge locked">???</div>
+                    </div>
+                </div>
+
+                <button id="back-btn" class="retro-btn simple-border">BACK TO START</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
