@@ -13,32 +13,28 @@
 
 <body>
 
-    <!-- CRT Scanline Overlay -->
-    <div class="scanlines"></div>
-    <div class="haze"></div>
-
+    <!-- Minimalist Background - No Scanlines -->
     <main class="container">
         <!-- SECTION 1: HERO -->
         <section id="hero" class="section active">
             <div class="hero-content">
                 <div class="col-left">
-                    <h1 class="glitch-text">HEY<br>YOU</h1>
+                    <h1 class="greeting-text">PRESENCE<br>CONFIRMED...</h1>
                 </div>
                 <div class="col-center">
                     <div class="character-container">
-                        <img src="assets/character.svg" alt="Pixel Character" class="pixel-char floating">
+                        <img src="assets/Hero image.png" alt="Pixel Character" class="pixel-char floating">
                         <div class="shadow"></div>
                     </div>
                 </div>
                 <div class="col-right">
                     <div class="intro-text">
-                        <span>I'M</span>
-                        <span class="name highlight">LAUKIK</span>
-                        <span>DESHMUKH</span>
+                        <span class="small-text">This is</span>
+                        <h1 class="name">Laukik<br>Deshmukh</h1>
                     </div>
                 </div>
             </div>
-            <button id="start-btn" class="retro-btn neon-box">START_GAME</button>
+            <button id="start-btn" class="retro-btn">ENTER</button>
         </section>
 
         <!-- SECTION 2: ABOUT -->
@@ -47,7 +43,7 @@
                 <h2 class="section-title">PLAYER PROFILE</h2>
                 <div class="profile-grid">
                     <div class="profile-pic">
-                        <img src="assets/character.svg" alt="Profile" class="avatar-small">
+                        <img src="assets/Hero image.png" alt="Profile" class="avatar-small">
                     </div>
                     <div class="profile-stats">
                         <p><span class="label">NAME:</span> Laukik Deshmukh</p>
@@ -61,7 +57,7 @@
                     <p>Passionate coder and data science enthusiast ready to tackle complex algorithms and build
                         scalable solutions.</p>
                 </div>
-                <button id="view-stats-btn" class="retro-btn simple-border">VIEW STATS</button>
+                <button id="view-stats-btn" class="retro-btn">VIEW STATS</button>
             </div>
         </section>
 
@@ -104,14 +100,8 @@
                         <div class="badge">3★ HackerRank</div>
                         <div class="badge">Oracle AI Cert</div>
                         <div class="badge">JPMorgan Sim</div>
-                        <!-- Filler badges for retro look -->
-                        <div class="badge locked">???</div>
-                        <div class="badge locked">???</div>
+                        <button id="back-btn" class="retro-btn">BACK TO START</button>
                     </div>
-                </div>
-
-                <button id="back-btn" class="retro-btn simple-border">BACK TO START</button>
-            </div>
         </section>
     </main>
 
