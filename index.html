@@ -37,27 +37,59 @@
             <button id="start-btn" class="retro-btn">ENTER</button>
         </section>
 
-        <!-- SECTION 2: ABOUT -->
+        <!-- SECTION 2: CHAR PROFILE -->
         <section id="about" class="section hidden">
-            <div class="rpg-box">
-                <h2 class="section-title">PLAYER PROFILE</h2>
-                <div class="profile-grid">
-                    <div class="profile-pic">
-                        <img src="assets/Hero image.png" alt="Profile" class="avatar-small">
-                    </div>
-                    <div class="profile-stats">
-                        <p><span class="label">NAME:</span> Laukik Deshmukh</p>
-                        <p><span class="label">CLASS:</span> B.Tech CSE</p>
-                        <p><span class="label">LEVEL:</span> 3rd Year</p>
-                        <p><span class="label">MINOR:</span> Data Science</p>
-                        <p><span class="label">LOC:</span> Nashik, MH</p>
+            <div class="char-profile-container">
+                <!-- LEFT SECTION -->
+                <div class="cp-left">
+                    <h2 class="cp-title">PLAYER PROFILE</h2>
+                    <div class="cp-divider"></div>
+                    <div class="cp-data">
+                        <p><span class="cp-label">Name:</span> Laukik Deshmukh</p>
+                        <p><span class="cp-label">Class:</span> System Builder</p>
+                        <p><span class="cp-label">Status:</span> Active</p>
+                        <p><span class="cp-label">Origin:</span> Maharashtra, India</p>
+                        <p><span class="cp-label">Level:</span> 03</p>
                     </div>
                 </div>
-                <div class="bio-text">
-                    <p>Passionate coder and data science enthusiast ready to tackle complex algorithms and build
-                        scalable solutions.</p>
+
+                <!-- CENTER SECTION -->
+                <div class="cp-center">
+                    <img src="assets/ezgif-2b35078ecf5c91c2.gif" alt="Character" class="cp-char-img breathing">
                 </div>
-                <button id="view-stats-btn" class="retro-btn">VIEW STATS</button>
+
+                <!-- RIGHT SECTION -->
+                <div class="cp-right">
+                    <p class="cp-quote">“Always leveling up.”</p>
+                    <h2 class="cp-title section-title-small">ATTRIBUTES</h2>
+                    <div class="cp-attributes">
+                        <div class="cp-attr">
+                            <span class="cp-attr-name">Logic</span>
+                            <div class="cp-attr-track">
+                                <div class="cp-progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="cp-attr">
+                            <span class="cp-attr-name">Problem Solving</span>
+                            <div class="cp-attr-track">
+                                <div class="cp-progress-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="cp-attr">
+                            <span class="cp-attr-name">Creativity</span>
+                            <div class="cp-attr-track">
+                                <div class="cp-progress-bar" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="cp-attr">
+                            <span class="cp-attr-name">Consistency</span>
+                            <div class="cp-attr-track">
+                                <div class="cp-progress-bar" data-width="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="view-stats-btn" class="retro-btn cp-stats-btn">VIEW STATS</button>
+                </div>
             </div>
         </section>
 

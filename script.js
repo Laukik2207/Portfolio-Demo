@@ -30,13 +30,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (showSection === statsSection) {
                     animateStats();
                 }
+                if (showSection === aboutSection) {
+                    setTimeout(() => animateCpStats(), 1800); // Wait for section animations
+                }
                 // Reset stats if leaving stats (optional, for replayability)
                 if (hideSection === statsSection) {
                     resetStats();
                 }
+                if (hideSection === aboutSection) {
+                    resetCpStats();
+                }
             }, 50);
         }, 800); // Matches CSS transition time
     }
+
+    const cpStatBars = document.querySelectorAll('.cp-progress-bar');
 
     // Stat Animation
     function animateStats() {
@@ -48,6 +56,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function resetStats() {
         statBars.forEach(bar => {
+            bar.style.width = '0%';
+        });
+    }
+
+    function animateCpStats() {
+        cpStatBars.forEach(bar => {
+            const targetWidth = bar.getAttribute('data-width');
+            bar.style.width = targetWidth;
+        });
+    }
+
+    function resetCpStats() {
+        cpStatBars.forEach(bar => {
             bar.style.width = '0%';
         });
     }
